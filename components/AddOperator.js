@@ -21,7 +21,7 @@ export  function AddOperator(){
 
 	function handleClosePopup(){
 		setIsInfoTooltip(!isInfoTooltip)
-		result&&router.push('/main')
+		result&&router.push('/home')
 	}
 
 	function handleSubmit(e){
