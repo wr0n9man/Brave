@@ -1,0 +1,58 @@
+.operator{
+	display: flex;
+	position: relative;
+	justify-content: center;
+	background-color: black;
+	box-shadow: 0px 14px 20px rgba(34, 35, 58, 0.2);
+	border-radius: 15px;
+}
+
+.operator__img{	
+	border-radius: 15px;
+	position: relative;
+	width: 100%;
+	transition:  0.5s linear ;
+	overflow: hidden;
+	object-fit: cover;
+}
+
+.operator__name{
+	font-size: 15px;
+	color: white;
+	opacity: 0;
+	display: flex;
+	margin: auto;
+	align-self: center;
+	position: absolute;
+	transition:  0.5s linear ;
+}
+
+.operator:hover .operator__img{
+	cursor: pointer;
+	opacity: 0.4;
+}
+
+.operator:hover .operator__name{
+	cursor: pointer;
+	opacity: 1;
+}
+
+.operator__imgPay{
+	right: 85%;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	border-radius: 20px;
+	box-shadow: 8px 13px 30px 3px rgba(252, 56, 56, 0.2);
+	overflow: hidden;
+	object-fit: cover;
+}
+
+
+@media screen and (max-width: 769px){
+	.operator__imgPay{
+		display: none;
+	
+	}
+	
+}

@@ -1,0 +1,47 @@
+.payOperator__form{
+	
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+}
+
+.payOperator__input{
+	margin-top: 3px;
+	margin-bottom: 15px;
+	border: 0;
+	height: 36px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #ea3638;
+	background-color: transparent;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.payOperator__button{	
+	background: #000000;
+	border-radius: 2px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	border-radius: 2px;
+	color: #ffffff;
+	height: 35px;
+	margin-bottom: 37px;
+}
+
+.payOperator__button:hover {
+	background: rgba(0, 0, 0, 0.8);
+	cursor: pointer;
+}
+
+
+@media screen and (max-width: 769px){
+	.payOperator__form{
+		width: 90%;
+	}
+	
+}

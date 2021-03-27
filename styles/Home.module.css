@@ -1,0 +1,39 @@
+.add{
+  width: 30px;
+}
+
+.home__grid{
+	display:	grid; 
+	max-width: 40%;
+	gap: 10px;
+  max-height: 80%;
+	grid-template-columns: repeat(2,1.6fr); 
+	grid-template-rows: repeat(3,0.5fr); 
+	grid-auto-rows:  0.8fr ;
+	grid-auto-columns: 1.6fr;
+}
+
+
+@media (max-width: 1023px) {
+  .home__grid{
+    background-color: white;    
+		max-width: calc(80% + 20px);  
+    max-height: 80%; 
+    overflow: auto;
+    padding: 20px;
+    border-radius: 15px;
+	}
+}
+
+
+@media (max-width: 767px) {
+  .home__grid{
+    background-color: white;
+    grid-template-columns: 1fr;
+		max-width: calc(80% + 20px);  
+    max-height: 80%; 
+    overflow: auto;
+    padding: 20px;
+    border-radius: 15px;
+	}
+}
