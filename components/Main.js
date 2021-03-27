@@ -21,8 +21,8 @@ export  function Main({children}){
 				</h1>	
 				{children}	
 				<div className={styles.main__slider}>
-					<Link href={'/'}>
-						<a className={router.route=="/"? styles.main__sliderElement_active :styles.main__sliderElement}/> 
+					<Link href={'/main'}>
+						<a className={router.route=="/main"? styles.main__sliderElement_active :styles.main__sliderElement}/> 
 						
 					
 					</Link>

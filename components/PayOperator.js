@@ -19,7 +19,7 @@ export  function PayOperator(){
 
 	function handleClosePopup(){
 		setIsInfoTooltip(!isInfoTooltip)
-		result&&router.push('/')
+		result&&router.push('/main')
 	}
 
 	function handleEditValue(values){
