@@ -4,12 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",   
+    "build": "next build",
     "start": "next start",
     "server": "json-server --watch ./models/operator.json -p 4000"
-    },
+  },
   "dependencies": {
+    "json-server": "^0.16.3",
     "next": "10.0.9",
+    "npm-run-parallel": "^0.6.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-input-mask": "^2.0.4"
