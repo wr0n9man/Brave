@@ -1,8 +1,8 @@
 const jsonServer = require('json-server');
 const server = jsonServer.create();
-const router = jsonServer.router('./public/db.json');
+const router = jsonServer.router('./models/operator.json');
 const middlewares = jsonServer.defaults({
-  static: './.next',
+	static: './.next',
 });
 
 const PORT = process.env.PORT || 4000;
@@ -11,5 +11,5 @@ server.use(middlewares);
 server.use(router);
 
 server.listen(PORT, () => {
-  console.log('Server is running');
+	console.log('Server is running');
 });
