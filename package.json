@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "server": "json-server --watch ./models/operator.json -p 4000"
+    "start": "next start -p 3000",
+    "json-server": "json-server --watch ./models/operator.json -p 4000"
   },
   "dependencies": {
     "json-server": "^0.16.3",
