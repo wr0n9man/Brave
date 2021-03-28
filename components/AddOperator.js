@@ -27,7 +27,7 @@ export  function AddOperator(){
 	function handleSubmit(e){
 		
 		e.preventDefault()
-		fetch('http://localhost:4000/operator',{
+		fetch('https://brave-test.herokuapp.com/operator',{
 			method: 'POST',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({

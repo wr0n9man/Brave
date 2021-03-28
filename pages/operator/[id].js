@@ -12,7 +12,7 @@ export default function Operator({operator}){
 }
 
 Operator.getInitialProps  = async (ctx) =>{
-	const response = await fetch(`http://localhost:4000/operator/${ctx.query.id}`)
+	const response = await fetch(`https://brave-test.herokuapp.com/operator/${ctx.query.id}`)
 	const operator = await response.json()
 	return{
 		operator		
