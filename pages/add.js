@@ -6,8 +6,7 @@ export default function Add(){
 	
 return(	
 		<Main>
-			<AddOperator/>
-			
+			<AddOperator/>			
 		</Main>
 )
 }
