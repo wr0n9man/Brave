@@ -1,7 +1,7 @@
 ## Тестовое задание
-https://test-puce-psi.vercel.app/add
+https://test-puce-psi.vercel.app/home
 
-(еще не понимаю как пофиксить ошибку 500 на хостинге)
+
 навигация справа
 
 function​ func(s​​, ​a​, ​b)​ { 
