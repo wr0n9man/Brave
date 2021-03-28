@@ -22,7 +22,7 @@ export default function Home({operators}) {
 }
 
 Home.getInitialProps  = async () =>{
-	const response = await fetch('http://localhost:4000/operator')
+	const response = await fetch('https://brave-test.herokuapp.com/operator')
 	const operators = await response.json()
 	return{
 		operators		
