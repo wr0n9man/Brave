@@ -5,7 +5,7 @@ import { MyOperator } from '../../interfaces/operator';
 import styles from '../../styles/operator/Operator.module.css'
 export default function Operator({operator}){
 
-
+	
 	return(
 		<Main>
 			<img className={styles.operator__imgPay} src={operator.link} alt={operator.name}/>

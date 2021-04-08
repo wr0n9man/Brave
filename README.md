@@ -6,7 +6,7 @@ https://test-puce-psi.vercel.app/home
 
 function​ func(s​​, ​a​, ​b)​ { 
  
-	​if​ (​s.match(​​/​$/​​)) { 
+	​if​ (​s.match(​​/​^$/​​)) { 
 		r​eturn​ -​​1​; 
 	} 
 		
@@ -24,7 +24,7 @@ function​ func(s​​, ​a​, ​b)​ {
 		i--; 
 	} 
 
-	return ((aIndex ​!=​ -​​1​)&&  ​​Math.​max(​aIndex, bIndex));  
-	return( ​bIndex ​!=​ ​-1​​ ?	 bIndex:	 -​​1​ )
+	return ((aIndex ​!=​ -​​1​)&& (bIndex ==-1? aIndex: ​​Math.​max(​aIndex, bIndex)));  
+	return ​bIndex ​	;
 	} 
 } 
