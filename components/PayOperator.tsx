@@ -8,10 +8,10 @@ import style from '../styles/payOperator/PayOperator.module.css';
 
 export  function PayOperator(){
 	const router = useRouter()
-	const [isInfoTooltip, setIsInfoTooltip]= useState(false);
-	const [result, setResult]= useState(false);
-	const [num , setNum] = useState('')
-	const [value , setValue] = useState('')
+	const [isInfoTooltip, setIsInfoTooltip]= useState<boolean>(false);
+	const [result, setResult]= useState<boolean>(false);
+	const [num , setNum] = useState<string>('')
+	const [value , setValue] = useState<number>(0)
 
 	function handleEditNumber(values){
 		setNum(values.target.value)

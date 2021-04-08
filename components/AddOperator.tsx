@@ -7,10 +7,10 @@ import style from '../styles/payOperator/PayOperator.module.css';
 
 export  function AddOperator(){
    const router = useRouter()
-	const [isInfoTooltip, setIsInfoTooltip]= useState(false);
-	const [result, setResult]= useState(false);
-	const [name , setName] = useState('')
-	const [link, setLink] = useState('')
+	const [isInfoTooltip, setIsInfoTooltip]= useState<boolean>(false);
+	const [result, setResult]= useState<boolean>(false);
+	const [name , setName] = useState<string>('')
+	const [link, setLink] = useState<string>('')
 
 	function handleEditName(values){
 		setName(values.target.value)
@@ -49,13 +49,12 @@ export  function AddOperator(){
 		})
 	}
 	
-
 	return(
 		<>
 		<InfoTooltip open={isInfoTooltip} result={result} handleClosePopup={handleClosePopup}/>
 		<form name={`payOperator__form`} className={style.payOperator__form} onSubmit={handleSubmit}>
 			<span>Название оператора</span>
-			<input type="string" minLength="2" maxLength="15" required placeholder="Название оператора" className={style.payOperator__input} value={name} onChange={handleEditName}/>
+			<input type="string" required placeholder="Название оператора" className={style.payOperator__input} value={name} onChange={handleEditName}/>
 			<span>Картинка оператора</span>
 			<input type="link"  required placeholder="Ссылка на картинку" pattern="https?:\/\/(www.)?(\w*\W*)*" title="Вставьте ссылку на изображение" className={style.payOperator__input} value={link} onChange={handleEditLink} />
 			<button type="submit" className={style.payOperator__button}>Создать</button>
