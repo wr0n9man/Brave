@@ -17,9 +17,8 @@
 @media (max-width: 1023px) {
   .home__grid{
     background-color: white;    
-		max-width: calc(80% + 20px);  
+	max-width: calc(80% + 20px);  
     max-height: 80%; 
-    overflow: auto;
     padding: 20px;
     border-radius: 15px;
 	}
@@ -28,12 +27,16 @@
 
 @media (max-width: 767px) {
   .home__grid{
-    background-color: white;
-    grid-template-columns: 1fr;
-		max-width: calc(80% + 20px);  
-    max-height: 80%; 
-    overflow: auto;
-    padding: 20px;
-    border-radius: 15px;
+   margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+   max-height: 95%;
+   max-width: 100%;
+   padding: 0;
+   width: 100%;
+   margin-bottom: 35px;
+
 	}
+
+
 }

@@ -8,13 +8,13 @@ export default function Home({operators}) {
     <Main>    
       <div className={styles.home__grid}>
       {        
-        operators.map((operator)=>(
-          <Link href={`/operator/${operator.id}`}>
-            <a>
-              <Operator name={operator.name} link={operator.link}/>
-            </a>
-          </Link>
-          ))
+         operators.map((operator)=>(         
+            <Link href={`/operator/${operator.id}`} key={operator.id}>
+               <a>
+                  <Operator name={operator.name} link={operator.link} />
+               </a>
+            </Link>
+         ))
       }
       </div>    
     </Main>

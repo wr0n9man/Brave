@@ -42,6 +42,7 @@
 @media screen and (max-width: 769px){
 	.payOperator__form{
 		width: 90%;
+      margin: auto;
 	}
 	
 }

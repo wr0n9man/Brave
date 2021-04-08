@@ -29,13 +29,13 @@ export  function PayOperator(){
 	function handleSubmit(e){
 		e.preventDefault()		
 		if (Math.floor(Math.random() * (100 - 0))>=50){
-			console.log(1)
 			setIsInfoTooltip(true)
 			setResult(true)
 		}else{
 			setIsInfoTooltip(true)
 			setResult(false)
 		}
+   
 	}
 
 	return(
@@ -43,7 +43,7 @@ export  function PayOperator(){
 		<InfoTooltip open={isInfoTooltip} result={result} handleClosePopup={handleClosePopup}/>
 		<form name={`payOperator__form`} className={style.payOperator__form} onSubmit={handleSubmit}>
 			<span>Номер телефона</span>
-			<InputMask mask="8(999)999-99-99" type="tel" name="tel" value={num} onChange={handleEditNumber} required placeholder="8(999)999-99-99" className={style.payOperator__input}/>
+            <InputMask mask="8(999)999-99-99" maskChar="_" type="tel" name="tel" value={num} pattern="8\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" onChange={handleEditNumber} required placeholder="8(999)999-99-99" className={style.payOperator__input} />
 			<span>Сумма пополнения</span>
 			<input type="number" min="1" max="1000" required placeholder="Сумма пополнения" className={style.payOperator__input} value={value} onChange={handleEditValue}/>
 			<button type="submit" className={style.payOperator__button}>Оплатить</button>

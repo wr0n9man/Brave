@@ -49,10 +49,30 @@
 }
 
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 767px){
 	.operator__imgPay{
-		display: none;
-	
+		display: none;	
 	}
+   .operator__img{
+      margin-left: 5px;
+      height: 60px;
+      width: 60px;
+   }
+   .operator__name{
+      position: relative;
+      color: black;
+      opacity: 1;
+      font-size: 14px;
+   }
+
+   .operator{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: none;
+      border: solid rgb(104, 104, 104) 1px;
+      height: 70px;
+      background-color: white;
+   }
 	
 }

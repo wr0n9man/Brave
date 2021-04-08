@@ -25,6 +25,8 @@
 	align-items: center;
 }
 
+
+
 .main__container{
 	width: 80%;
 	position: relative;
@@ -98,7 +100,14 @@
 
 @media screen and (max-width: 767px){
 	.main__container{
-		height: 80vh;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      justify-content: start;
 	}
-	
+	.main__title{
+      font-size: 22px;
+      position: absolute;
+      top: 0;
+      text-align: center;
+   }
 }

@@ -1,10 +1,12 @@
 import {useState} from 'react'
 import React from 'react';
 import {InfoTooltip} from './InfoTooltip';
+import { useRouter } from 'next/router';
 import style from '../styles/payOperator/PayOperator.module.css';
 
 
 export  function AddOperator(){
+   const router = useRouter()
 	const [isInfoTooltip, setIsInfoTooltip]= useState(false);
 	const [result, setResult]= useState(false);
 	const [name , setName] = useState('')
@@ -27,7 +29,7 @@ export  function AddOperator(){
 	function handleSubmit(e){
 		
 		e.preventDefault()
-		fetch('https://brave-test.herokuapp.com/operator',{
+      fetch('https://brave-test.herokuapp.com/operator',{
 			method: 'POST',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({
